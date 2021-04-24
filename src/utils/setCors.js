@@ -7,7 +7,7 @@ const setCorsHeaders = (response, config) => {
   )
   response.headers.set(
     'Access-Control-Allow-Headers',
-    corsConfig ? corsConfig.allowHeaders : 'application/json, Content-type',
+    corsConfig ? corsConfig.allowHeaders : 'Content-type',
   )
   response.headers.set(
     'Access-Control-Allow-Methods',
